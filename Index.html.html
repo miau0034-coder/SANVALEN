@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flyer Digital</title>
+    <style>
+        /* Reset total para móviles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff; /* Fondo blanco para que coincida con tu flyer */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Tahoma', sans-serif;
+            align-items: center;
+        }
+
+        /* Contenedor de la imagen */
+        .flyer-container {
+            width: 100%;
+            max-width: 600px; /* Tamaño máximo para tablets/PC, en móvil será 100% */
+            padding-bottom: 120px; /* Espacio para que el botón no tape el final de la imagen */
+        }
+
+        .flyer-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            /* Animación suave al abrir */
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Botón de WhatsApp Gigante */
+        .cta-container {
+            position: fixed;
+            bottom: 20px;
+            width: 90%;
+            max-width: 450px;
+            z-index: 1000;
+        }
+
+        .btn-whatsapp {
+            display: block;
+            background: linear-gradient(180deg, #4df383 0%, #198d41 100%);
+            color: white;
+            text-align: center;
+            padding: 22px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 20px;
+            border-radius: 15px;
+            border: 3px solid #ffffff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+            transition: transform 0.2s ease;
+        }
+
+        /* Animación de pulso para el botón */
+        .btn-whatsapp:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flyer-container">
+        <img src="1.PNG.png" class="flyer-img" alt="Flyer">
+    </div>
+
+    <div class="cta-container">
+        <a href="https://wa.me/5567598142" class="btn-whatsapp">
+            MANDAR WHATSAPP
+        </a>
+    </div>
+
+</body>
+</html>
